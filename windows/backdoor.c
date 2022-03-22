@@ -7,7 +7,7 @@
 #include<sys/types.h>
 
 using namespace std;
-
+// function for hiding the window for instance to run in backgroud 
 int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrev,LPSTR lpCndLine, int nCndShow){
         HWND stealth;
         AllocConsole();
