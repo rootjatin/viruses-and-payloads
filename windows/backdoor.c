@@ -12,7 +12,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrev,LPSTR lpCndLine, int n
         HWND stealth;
         AllocConsole();
         stealth =FindWindowA("ConsoleWindowClass",NULL);
-
+        // HERE 0 represent that windows will not be visible to the end user and this program will going to run in background 
         ShowWindow(stealth, 0);
 
 }
